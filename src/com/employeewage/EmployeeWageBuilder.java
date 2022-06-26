@@ -1,17 +1,29 @@
 package com.employeewage;
 
 public class EmployeeWageBuilder {
+	
 	public static void main(String[] args) {
 		
 		System.out.println(" ---- Welcome to Employee Wage Computation Program on Master Branch ---- ");
 	
-		int is_present=1;
-		double empCheck=Math.floor(Math.random()*10)%2;
+		 int is_present=1;
+		 int wagePerHour=20;
+		 int workingHours=8;
+		 double empCheck=Math.floor(Math.random()*10)%2;
 		
 		if(empCheck == is_present )
-			System.out.println("\n Employee is Present ");
+		{			
+			int empWage=wagePerHour*workingHours;
+			System.out.println(" Employee is Present ");
+		    System.out.println(" Employee Wage is : "+empWage);
+		}
 		else
-			System.out.println("\n Employee is Absent ");
+		{	
+			int empWage=0;
+			System.out.println(" Employee is Absent ");
+			System.out.println(" Employee Wage is : "+empWage);
+		}	
+			
 
 	}
 	
